@@ -78,7 +78,7 @@ void draw() {
   int j = int(320.0/scale)+1;
   for (int x = i-5; x <= i+5; x++){
     for (int y = j-5; y <= j+5; y++){
-      fluid.add_dens(x, y, 25);
+      //fluid.add_dens(x, y, 25);
       //print(x, y, "velocity", dx*0.1, dy*0.1);
     }
   }
@@ -88,7 +88,7 @@ void draw() {
     for (int y = 1; y <= Ndim; y++){
       //float dy = map(noise(xoff, 0), 0, 1, -0.75, 0.75);
       float g = 9.8/100;
-      fluid.add_vel(x, y, 0, g*fluid.dens[IX(x, y)]/100);
+      //fluid.add_vel(x, y, 0, g*fluid.dens[IX(x, y)]/100);
       //fluid.add_vel(158-x, y-5, -0.75, -dy);
       xoff += 0.5;
       //print(x, y, "velocity", dx*0.1, dy*0.1);
